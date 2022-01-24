@@ -50,6 +50,17 @@ class PageListView extends StatelessWidget {
                 textColor: Colors.white,
               ),
             ),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              child: MaterialButton(
+                child: Text('Custom GridView'),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => CustomeGridView()));
+                },
+                color: Colors.green,
+                textColor: Colors.white,
+              ),
+            ),
 
           ],
         ),
